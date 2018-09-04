@@ -1,0 +1,22 @@
+mixin menu()
+  section.menu-section
+    .container
+      +b('nav').menu
+        +e.item
+          a(href='#') DOMŮ
+        +e.item
+          a(href='#') NAŠE STRATEGIE
+        +e.item
+          a(href='#') O NÁS
+        +e.item
+          a(href='#') NAŠE SLUŽBY
+        +e.item
+          a(href='#') AKTUALITY
+        +e.item
+          a(href='#') Kontakty
+        +e.item.dropdown
+          a(href='#' id="search" data-toggle="dropdown")
+            img(src='assets/images/search-icon.png' width='25' height='27')
+          .dropdown-menu.dropdown-menu-right.px-3(aria-labelledby="search")
+            form
+              input.form-control(placeholder='Search')

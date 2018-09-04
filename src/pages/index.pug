@@ -1,0 +1,25 @@
+extends ../components/layout-default/layout-default
+include ../components/menu/menu
+include ../components/slider/slider
+include ../components/strategy/strategy
+include ../components/about/about
+include ../components/advantages/advantages
+include ../components/services/services
+include ../components/contacts/contacts
+include ../components/news/news
+include ../components/partners/partners
+
+
+block head
+    - var pageTitle = 'Index Page';
+
+block content
+  +menu()
+  +slider()
+  +strategy()
+  +about()
+  +advantages()
+  +services()
+  +contacts()
+  +news()
+  +partners()

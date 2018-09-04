@@ -1,0 +1,30 @@
+mixin header()
+  +b('header').header
+    .container
+      +e.top
+        +e('span').desc "Investiční skupina se smyslem pro obchod".
+        +e.main
+          +e('button').reg.btn.btn-sm.btn-border.btn-border-blue
+            | Investor Login
+            i.fa.fa-user
+          +e('ul').social.social
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-youtube-play
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-linkedin
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-twitter
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-facebook
+          +e.lang.lang
+            select
+              option cz
+              option en
+    +e.bottom
+      .container
+        +e.logo
+          img(src='assets/images/logo-full.png' height='166' width='173')

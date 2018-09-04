@@ -1,0 +1,45 @@
+@import ../../shared/sass/vars
+
+.header
+  color: $blue
+  &__top
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding: 20px 0
+  &__bottom
+    background-color: $dark-blue
+    padding-bottom: 30px
+  &__main
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &__reg
+    margin: 10px
+  &__desc
+    margin: 10px 0
+    margin-left: 200px
+    font-size: 16px
+    font-style: italic
+    font-weight: 600
+  &__lang
+    margin: 10px 0
+  &__social
+    margin: 10px 25px
+    font-size: 16px
+  &__logo
+    position: relative
+    margin-top: -30px
+    display: inline-flex
+    justify-content: center
+    &:before
+      position: absolute
+      top: -20px
+      content: ''
+      width: 120px
+      height: 120px
+      background-color: $dark-blue
+      border-radius: 50%
+    img
+      position: relative
