@@ -1,2 +1,52 @@
+@import ../../shared/sass/vars
+
 .advantages
-	display: block
+	margin: 50px 0
+
+.advantage
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &__logo
+    margin-bottom: 40px
+  &__head
+    margin-bottom: 30px
+    padding-bottom: 10px
+    font-family: "Raleway", sans-serif
+    font-weight: bolder
+    font-size: 45px
+    color: $dark-blue
+    border-bottom: 1px solid $gold
+  &__head-2
+    position: relative
+    margin-bottom: 40px
+    font-family: "Raleway", sans-serif
+    font-weight: lighter
+    font-size: 34px
+    color: $main-text
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: -30px
+      width: 22px
+      height: 18px
+      background: url("../images/advantages.png") no-repeat
+    &:after
+      content: ''
+      position: absolute
+      top: 25px
+      right: -30px
+      width: 22px
+      height: 18px
+      background: url("../images/advantages.png") no-repeat
+      transform: rotate(180deg)
+  &__text
+    width: 80%
+    font-family: "Work Sans", sans-serif
+    font-size: 14px
+    color: $main-text
+    text-align: center
+  &__arrow
+    margin: 40px 0

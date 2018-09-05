@@ -1,2 +1,127 @@
+@import ../../shared/sass/vars
+
 .footer
-	display: block
+  margin-top: 50px
+  padding-bottom: 50px
+  background-color: $dark-blue
+
+.f-top
+  display: flex
+  margin: 35px 0 0
+  padding-bottom: 35px
+  border-bottom: 1px solid $blue
+  &__f-logo
+    position: relative
+    margin-top: -45px
+    display: inline-flex
+    &:before
+      position: absolute
+      top: -25px
+      left: 26px
+      content: ''
+      width: 120px
+      height: 120px
+      background-color: $dark-blue
+      border-radius: 50%
+    img
+      position: relative
+  &__address
+    display: flex
+    flex-direction: column
+    width: 200px
+    margin-left: 150px
+    &__head
+      font-family: "Work Sans", sans-serif
+      font-weight: bold
+      font-size: 14px
+      color: #cccccc
+    &__text
+      position: relative
+      margin: 0
+      padding-left: 17px
+      font-family: "Work Sans", sans-serif
+      font-size: 14px
+      color: #cccccc
+      &_icon:before
+        content: ''
+        position: absolute
+        left: 0
+        display: block
+        width: 10px
+        height: 15px
+        background: url("../images/address.png") no-repeat
+    &__ico
+      position: relative
+      margin: 20px 0 0
+      padding-left: 17px
+      font-family: "Work Sans", sans-serif
+      font-size: 14px
+      color: #cccccc
+      &_icon:before
+        content: ''
+        position: absolute
+        left: 0
+        display: block
+        width: 10px
+        height: 15px
+        background: url("../images/sheet.png") no-repeat
+  &__mob-mail
+    display: flex
+    flex-direction: column
+    margin-top: 35px
+    margin-left: 50px
+    &__phone
+      position: relative
+      padding-left: 20px
+      font-family: "Work Sans", sans-serif
+      font-size: 14px
+      color: #cccccc
+    &__email
+      position: relative
+      padding-left: 20px
+      font-family: "Work Sans", sans-serif
+      font-size: 14px
+      color: #cccccc
+
+.footer-mob-mail
+  position: absolute
+  left: 0
+  color: $blue
+
+a:hover .footer-mob-mail
+  color: $gold
+
+
+.footer .social li
+  margin-top: 20px
+  padding: 10px
+
+.footer .social a
+  color: $blue
+
+.footer .social a:hover
+  color: $gold
+
+.f-bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 7px 0
+  &__coop
+    margin: 0
+    font-family: "Work Sans", sans-serif
+    font-size: 14px
+    color: #cccccc
+
+.f-menu
+  display: flex
+  &__item
+    padding: 0 10px
+    border-right: 1px solid #cccccc
+    &:last-child
+      border: none
+    & a
+      font-family: "Work Sans", sans-serif
+      font-size: 14px
+      color: #cccccc
+      text-transform: uppercase

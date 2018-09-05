@@ -1,3 +1,16 @@
 mixin contacts()
-	+b.contacts
-		block
+  +b('section').contacts
+    +b.container
+      +b.contact
+        +e.logo
+          img(src='assets/images/logo-white.png' height='80' width='86')
+        +e('h2') Kontaktujte nás
+        +e('p') Pro bližší informace nás můžete kontaktovat prostřednictvím telefonu
+          +e('strong')  +420 540 112 567
+          |  v době od
+          +e('strong')  9:00
+          |  do
+          +e('strong')  17:00.
+        +b('button').contacts-btn.btn.btn-lg.btn-border-blue Sjednejte si schůzku
+    +b.contacts-fon
+      img(src='assets/images/contacts_fon.png' width='100%')

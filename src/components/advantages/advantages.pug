@@ -1,3 +1,13 @@
 mixin advantages()
-	+b.advantages
-		block
+  +b.advantages
+    +b.container
+      +b.advantage
+        +e.logo
+          img(src='assets/images/logo-gold.png' height='97' width='102')
+        +e('h2').head Proč PEVCP Group
+        +e('h2').head-2 Synergie 360° je pramenem naší filozofie.
+        +e('p').text PEVCP Investment Management jako česká společnost s mezinárodním rozsahem dokonale rozumí potřebám českých i mezinárodních investorů. Pracuje s know-how jednotlivých partnerů skupiny, které bylo vytvořeno na základě generačních zkušeností tradičních investičních uskupení, převážně rodinného charakteru. Vše s důrazem na unikátní systém 360 stupňového řízení řešeného portfolia či investičního projektu a především na vzájemnou synergii dílčích investorů.
+        +e.arrow
+          img(src='assets/images/advantages_arrow.png' height='16' width='28')
+    +b.advantages-fon
+      img(src='assets/images/advantages_fon.png' width='100%')

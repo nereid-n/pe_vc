@@ -1,3 +1,49 @@
 mixin footer()
-	+b.footer
-		block
+  +b('footer').footer
+    +b.container
+      +b.f-top
+        +e.f-logo
+          img(src='assets/images/logo-full.png' height='166' width='173')
+        +e.address
+          +e('p').address__head PE&VC Partner Group SE
+          +e('p').address__text_icon Adresa:
+          +e('p').address__text Londýnská 674/55, Vinohrady, 120 00 Praha 2
+          +e('p').address__text Ceská republika
+          +e('p').address__ico_icon IČO: 06978096
+        +e.mob-mail
+          +e('p').mob-mail__phone Telefon: +420 540 112 567
+            i.fa.fa-phone.footer-mob-mail
+          +e('a')(href='mailto:info@pevcp.com').mob-mail__email Email: info@pevcp.com
+            i.fa.fa-envelope.footer-mob-mail
+          +e('ul').social.social
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-youtube-play.fa-2x
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-linkedin.fa-2x
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-twitter.fa-2x
+            +e('li').social-item
+              a(href='#')
+                i.fa.fa-facebook.fa-2x
+      +b.f-bottom
+        +e('p').coop PEVCP Group SE © 2018. Všechna práva vyhrazena.
+        +b('nav').f-menu
+          +e.item
+            a(href='#') O NÁS
+          +e.item
+            a(href='#') Historie
+          +e.item
+            a(href='#') Reference
+          +e.item
+            a(href='#') Služby
+          +e.item
+            a(href='#') Naše fondy
+          +e.item
+            a(href='#') Naše strategie
+          +e.item
+            a(href='#') Aktuality
+          +e.item
+            a(href='#') Kontakty

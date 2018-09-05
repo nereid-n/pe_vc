@@ -1,2 +1,72 @@
+@import ../../shared/sass/vars
+
 .news
-	display: block
+  margin: 50px 0
+
+.news-head
+  margin-bottom: 40px
+  font-family: "Raleway", sans-serif
+  font-weight: bold
+  font-size: 45px
+  color: $dark-blue
+
+.news-container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.news-block
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 22%
+    &:first-child .news-text-block
+      border: none
+
+
+.news-text-block
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-top: 20px
+  padding: 0 0 0 22px
+  border-left: 1px solid $gold
+  & h5
+    font-family: "Work Sans", sans-serif
+    font-weight: 600
+    font-size: 17px
+    color: $dark-blue
+  & p
+    height: 135px
+    font-family: "Work Sans", sans-serif
+    font-size: 14px
+    color: $dark-blue
+    overflow: hidden
+  & a
+    position: relative
+    padding-right: 10px
+    font-family: "Work Sans", sans-serif
+    font-weight: bolder
+    font-size: 14px
+    color: $gold
+    text-align: right
+    &:before
+      content: ''
+      position: absolute
+      top: 3px
+      right: 0
+      width: 6px
+      height: 11px
+      background: url("../images/news_arrow.png") no-repeat 50% 50%
+
+.news-btn
+  margin-top: 40px
+  text-transform: uppercase
+
+.news-fon
+  background: $gold-darkBlue

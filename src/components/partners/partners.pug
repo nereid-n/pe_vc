@@ -1,3 +1,15 @@
 mixin partners()
-	+b.partners
-		block
+  +b('section').partners
+    +b.container
+      +b.partner
+        +e('h2') Naši partneři
+        +e.image
+          img(src='assets/images/lorem_ipsum.png' height='99' width='117' alt='')
+        +e.image
+          img(src='assets/images/logo_partners.png' height='48' width='147' alt='')
+        +e.image
+          img(src='assets/images/company_logo.png' height='56' width='93' alt='')
+        +e.image
+          img(src='assets/images/company_name.png' height='76' width='117' alt='')
+        +e.image
+          img(src='assets/images/logo_partners_2.png' height='74' width='75' alt='')
